@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Moving Mindz</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Allows bootstrap to scale to mobile verison -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css-files/style.css">
+		<!-- CSS only for this page -->
+		<link rel="stylesheet" href="css-files/clubs-style.css">
+
+		<script>
+			$(document).ready(function(){
+				var pageWidth = $(window).width();
+				var angle = 0;
+				var rotate;
+				// prevents carousel from moving to the next group until user clicks on side buttons
+				$("#clubDesc").carousel({
+					pause: true,
+					interval: false
+				})
+/*
+				$("#gearA, #gearB, #gearC, #gearD").mouseover(function(){
+					revolution = setInterval(function(){
+					$('#gearA, #gearB, #gearC, #gearD').css({
+						"-moz-transform": "rotate(" + angle + "deg)",
+						"-webkit-transform": "rotate(" + angle + "deg)",
+						"-o-transform": "rotate(" + angle + "deg)",
+						"-ms-transform": "rotate(" + angle + "deg)"
+					});
+
+					angle = angle + 10;
+					if (angle == 360)
+						angle = 0;
+					}, 100);
+					$("#banner1").fadeIn(500)
+					$("#banner1").css({
+						"display": "block",
+						"background-color": "#5b9bd5",
+						"padding": "50px",
+					})
+					$("#empty-space").css({
+						"display": "none"
+					})
+				})
+
+				$("#gearA, #gearB, #gearC, #gearD").mouseout(function(){
+					clearInterval(revolution);
+					$("#banner1").css({
+						"display": "none"
+					})
+					$("#banner1").fadeOut(1000)
+					$("#empty-space").css({
+						"display": "block"
+					})
+				})
+
+				// Club information toggled to reduce scrolling for user
+                $("#vex-club").on("click", function(){
+					$("#vex-club-info").toggle()
+				})
+
+                $("#3d-print-club").on("click", function(){
+					$("#3d-print-info").toggle()
+				})
+
+                $("#python-club").on("click", function(){
+					$("#python-club-info").toggle()
+				})
+
+				$("#scratch-club").on("click", function(){
+					$("#scratch-club-info").toggle()
+				})
+
+				$("#game-club").on("click", function(){
+					$("#game-club-info").toggle()
+				})
+
+				$("#lego-club").on("click", function(){
+					$("#lego-club-info").toggle()
+				})
+
+				$("#knex-club").on("click", function(){
+					$("#knex-club-info").toggle()
+				})
+
+				$("#film-club").on("click", function(){
+					$("#film-club-info").toggle()
+				})
+
+				$("#3d-anim-club").on("click", function(){
+					$("#3d-anim-info").toggle()
+				})
+*/
+
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html">
+						<!-- This image will appear when viewed from mobile -->
+						<img class="visible-xs" src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogoMobile"> 
+						<!-- This image will appear when viewed from desktop -->
+						<div class="hidden-xs">
+							<img src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogo">
+						</div>
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html">Home</a></li>
+
+						<!-- Dropdown Menu / Tutoring -->
+						<li><a href="tutoring-info.html" class="tutor-hover">Tutoring</a></li>
+						
+						<!-- Dropdown Menu / Camp 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Camps
+                            <i class="caret" id="camp-caret"></i></a>
+                                <ul class="dropdown-menu">
+									<li><a href="camps-info.html" class="camps-hover">Camp Information</a></li>
+									<li class="divider" id="camps-div"></li>
+                                    <li><a href="#" class="camps-hover">Summer</a></li>
+                                    <li><a href="#" class="camps-hover">Spring</a></li>
+                                    <li><a href="#" class="camps-hover">Winter</a></li>
+								</ul>
+						</li>
+						-->
+						<!-- Dropdown Menu / After School Clubs -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="active">Clubs
+								<i class="caret" id="clubs-caret"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="clubs-info.html" class="clubs-hover">Clubs Information</a></li>
+									<li class="divider" id="clubs-div"></li>
+									<li><a href="school-location.html" class="clubs-hover">School Locations</a></li>
+									<li><a href="available-clubs.html" class="clubs-hover">Available Clubs</a></li>
+								</ul>
+						</li>
+
+						<li><a href="form-sign-up.html" id="end">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- Main Section -->
+			<div class="body-text">
+				<div class="container-fluid">
+					<img src="images/clubs/afterschool-stem-clubs.svg" id="page-title-img">
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="images/clubs/engagement1.png" class="engagement-img">
+						</div>
+						<div class="col-sm-3">
+							<img src="images/clubs/engagement2.png" class="engagement-img">
+						</div>
+						<div class="col-sm-3">
+							<img src="images/clubs/engagement3.png" class="engagement-img">
+						</div>
+						<div class="col-sm-3">
+							<img src="images/clubs/engagement4.png" class="engagement-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="interest-row">
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="images/clubs/left-arrow.svg" class="form-img arrows-mobile">
+					</div>
+					<div class="col-sm-4">
+						<a href="form-sign-up.html" target="_blank">
+							<img src="images/clubs/interest-button.svg" class="form-img interest">
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<img src="images/clubs/right-arrow.svg" class="form-img arrows-mobile">
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="body-text">
+				<div class="container-fluid">
+					<img src="images/clubs/our-clubs.svg" id="clubs-carousel-img">
+					<div id="clubDesc" class="carousel slide">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+	
+							<div class="item active">
+								<div class="row text-center">
+									<div class="col-sm-4">
+											<a href="available-clubs.html#vex-club" target="_blank">
+											<div id="vex-club">
+												<img src="images/clubs/club-img/club-vex.png" class="club-img">
+													<h2>Vex Robotics<i class="caret-mobile"></i></h2>
+											</div>
+											<ul id="vex-club-info" class="club-info">
+												<li><b>Description:</b> Gain a strong founcdation in robotics engineering as we explore design 
+													concepts to more advanced robotics systems using the VEX EDR Robotics kit or the VEX IQ Robotics kit</li>
+												<li><b>Categories:</b> Robotics, Engineering Design, Coding, Mathematics, Science</li>
+												<li><b>Grades:</b> 4-8</li>
+											</ul>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="available-clubs.html#3d-print-club" target="_blank">
+											<div id="3d-print-club">
+												<img src="images/clubs/club-img/club-3d-print.png" class="club-img">
+												<h2>3D Printing<i class="caret-mobile"></i></h2>
+											</div>
+											<ul id="3d-print-info" class="club-info">
+												<li><b>Description:</b> In this club, students will learn how to create their own three-dimensional designs that they can animate and print using a 3D printer!
+													By the end of this series, they’ll be able to take home a 3D-printed version of their design!</li>
+												<li><b>Categories:</b> Engineering Design, Science, Mathematics, Critical Thinking, Creative Thinking</li>
+												<li><b>Grades:</b> TK-8</li>
+											</ul>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="available-clubs.html#python-club" target="_blank">
+											<div id="python-club">
+												<img src="images/clubs/club-img/club-python.png" class="club-img">
+												<h2>Coding: Python<i class="caret-mobile"></i></h2>
+											</div>
+											<ul id="python-club-info" class="club-info">
+												<li><b>Description:</b> Explore the basic principles of computer science, 
+													while learning how to code in Python, a widely used and easy-to-learn programming language.</li>
+												<li><b>Categories:</b> Coding, Computer Science, Logic, Mathematics</li>
+												<li><b>Grades:</b> 4-8</li>
+											</ul>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row text-center">
+									<div class="col-sm-4">
+											<a href="available-clubs.html#game-club" target="_blank">
+												<div id="game-club">
+													<img src="images/clubs/club-img/club-game-design.png" class="club-img">
+													<h2>Game Design Club<i class="caret-mobile"></i></h2>
+												</div>
+												<ul id="game-club-info" class="club-info">
+													<li><b>Description:</b> Work with other students to design and create a multi-level online game using a variety of gaming platforms.</li>
+													<li><b>Categories:</b>Game Design, Coding, Logic, Science, Mathematics, Critical Thinking, Creative Thinking</li>
+													<li><b>Grades:</b> TK-8</li>
+												</ul>
+											</a>
+									</div>
+									<div class="col-sm-4">
+											<a href="available-clubs.html#lego-club" target="_blank">
+												<div id="lego-club">
+													<img src="images/clubs/club-img/club-lego.png" class="club-img">
+													<h2>LEGO Engineering Club<i class="caret-mobile"></i></h2>
+												</div>
+												<ul id="lego-club-info" class="club-info">
+													<li><b>Description:</b> Investigate different architectural designs and experiment with simple and compound machines
+														using a variety of LEGO kits including the LEGO We-Do 2.0 kit, the LEGO Simple & Powered Machines kit, and the LEGO Mindstorms EV3 Robotics kit.
+														Emphasis will not only be on the Engineering Design Process, but on the Mathematics and Science that are observed in each project.</li>
+													<li><b>Categories:</b> Engineering, Mathematics, Science, Critical Thinking, Creative Thinking</li>
+													<li><b>Grades:</b> TK-8</li>
+												</ul>
+											</a>
+									</div>
+									<div class="col-sm-4">
+											<a href="available-clubs.html#knex-club" target="_blank">
+												<div id="knex-club">
+													<img src="images/clubs/club-img/club-knex.png" class="club-img">
+													<h2>K'NEX Engineering Club<i class="caret-mobile"></i></h2>
+												</div>
+												<ul id="knex-club-info" class="club-info">
+													<li><b>Description:</b> Design and create a variety of engineering projects from bridges and catapults to automated rollercoasters.</li>
+													<li><b>Categories:</b> Engineering Design, Science, Mathematics, Critical Thinking, Creative Thinking</li>
+													<li><b>Grades:</b> TK-8</li>
+												</ul>
+											</a>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row text-center">
+									<div class="col-sm-4">
+										<a href="available-clubs.html#film-club" target="_blank">
+											<div id="film-club">
+												<img src="images/clubs/club-img/club-film.png" class="club-img">
+												<h2>Filmmaking Club<i class="caret-mobile"></i></h2>
+											</div>
+											<ul id="film-club-info" class="club-info">
+												<li><b>Description:</b> Do you love movies? Ever wonder how they’re made? Join the Filmmaking Club to experience the magic of making your own movie! 
+													Learn camera and lighting techniques, acting and script writing, story boarding, video editing, and green screen technology.</li>
+												<li><b>Categories:</b> Filmmaking, Engineering, Critical Thinking, Creative Thinking</li>
+												<li><b>Grades:</b> TK-8</li>
+											</ul>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="available-clubs.html#3d-anim-club" target="_blank">
+											<div id="3d-anim-club">
+												<img src="images/clubs/club-img/club-3d-animation.png" class="club-img">
+												<h2>3D Animation Club<i class="caret-mobile"></i></h2>
+											</div>
+											<ul id="3d-anim-info" class="club-info">
+												<li><b>Description:</b> Have ideas for a cartoon or comic book? Come and make your own work of art through CGI!
+													Use 3D software to model and animate your own world!</li>
+												<li><b>Categories:</b> Geometry, Computers, Engineering Design, Mathematics, Critical Thinking, Creative Thinking</li>
+												<li><b>Grades:</b> 2-8</li>
+											</ul>
+										</a>
+									</div>
+									<div class="col-sm-4">
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" id="left-control" href="#clubDesc" data-slide="prev">
+							<img src="images/carousel/left-carrot.png" class="carousel-control-img">
+						</a>
+						<a class="right carousel-control" id="right-control" href="#clubDesc" data-slide="next">
+							<img src="images/carousel/right-carrot.png" class="carousel-control-img">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					&copy;2017 Moving Mindz LLC
+				</div>
+
+				<div class="col-sm-6 center">
+					<a href="https://www.facebook.com/movingmindz" target="_blank"><img src="images/social/facebook.png" class="social-img"></a>
+					<a href="https://twitter.com/Moving_Mindz" target="_blank"><img src="images/social/twitter.png" class="social-img"></a>
+					<a href="https://www.linkedin.com/company/moving-mindz/" target="_blank"><img src="images/social/linkedin.png" class="social-img"></a>
+					<a href="https://www.instagram.com/movingmindz/" target="_blank"><img src="images/social/instagram.png" class="social-img"></a>
+					<a href="https://www.youtube.com/channel/UCcuU9063487uOW15m0ELkeQ" target="_blank"><img src="images/social/youtube.png" class="social-img"></a>
+					<a href="mailto:info@movingmindz.com" target="_blank"><img src="images/social/mail.png" class="social-img"></a>
+				</div>
+
+				<div class="col-sm-3">
+					<a href="#">Contact us</a>
+					|
+					<a href="#">Careers</a>
+					|
+					<a href="#">Locations</a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+</html>

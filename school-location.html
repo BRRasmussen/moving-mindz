@@ -1,0 +1,238 @@
+<!doctype html>
+<!--
+	***** ITEMS NEEDED *****
+	HYPERLINKS NEEDED/pages still needed to be created!!
+		-camp
+			-camp information
+			-summer camp
+			-spring camp
+			-winter camp
+		-clubs
+			-school districts (need to create a sub dropdown)(maybe no drop down menu?)
+			-clubs offered (need to create a sub dropdown)
+		-sign up
+		-contact us
+		-careers
+		-locations
+-->
+<html lang="en">
+	<head>
+
+		<title>Moving Mindz</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Allows bootstrap to scale to mobile verison -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css-files/style.css">
+		<!-- CSS only for this page -->
+		<link rel="stylesheet" href="css-files/school-location-style.css">
+
+		<script>
+			$(document).ready(function(){
+				$("#enroll").on("click", function(){
+					alert("click")
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html">
+						<!-- This image will appear when viewed from mobile -->
+						<img class="visible-xs" src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogoMobile"> 
+						<!-- This image will appear when viewed from desktop -->
+						<img class="hidden-xs" src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogo">
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html">Home</a></li>
+
+						<!-- Dropdown Menu / Tutoring -->
+						<li><a href="tutoring-info.html" class="tutor-hover">Tutoring</a></li>
+						
+						<!-- Dropdown Menu / Camp 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Camps
+                            <i class="caret" id="camp-caret"></i></a>
+                                <ul class="dropdown-menu">
+									<li><a href="camps-info.html" class="camps-hover">Camp Information</a></li>
+									<li class="divider" id="camps-div"></li>
+                                    <li><a href="#" class="camps-hover">Summer</a></li>
+                                    <li><a href="#" class="camps-hover">Spring</a></li>
+                                    <li><a href="#" class="camps-hover">Winter</a></li>
+								</ul>
+						</li>
+						-->
+						
+						<!-- Dropdown Menu / After School Clubs -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="active">Clubs
+								<i class="caret" id="clubs-caret"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="clubs-info.html" class="clubs-hover">Clubs Information</a></li>
+									<li class="divider" id="clubs-div"></li>
+									<li><a href="school-location.html" class="clubs-hover">School Locations</a></a></li>
+								<!--
+									<li><a href="#" class="clubs-hover">MSTA</a></li>
+									<li><a href="#" class="clubs-hover">Niemes Elementary</a></li>
+									<li><a href="#" class="clubs-hover">St Anthony Parish School</a></li>
+									<li><a href="#" class="clubs-hover">St Barnabus School</a></li>
+									<li><a href="#" class="clubs-hover">St Irenaeus Parish School</a></li>
+									<li><a href="#" class="clubs-hover">St Lucy School</a></li>
+									<li><a href="#" class="clubs-hover">St Maria Goretti School</a></li>
+									<li><a href="#" class="clubs-hover">St Paul of the Cross School</a></li>
+								-->
+									<li><a href="available-clubs.html" class="clubs-hover">Available Clubs</a></a></li>
+								<!--
+									<li><a href="#" class="clubs-hover">3D Animation</a></li>
+									<li><a href="#" class="clubs-hover">3D Printing</a></li>
+									<li><a href="#" class="clubs-hover">Filmmaking</a></li>
+									<li><a href="#" class="clubs-hover">Game Design</a></li>
+									<li><a href="#" class="clubs-hover">K'Nex Engineering</a></li>
+									<li><a href="#" class="clubs-hover">Lego Engineering</a></li>
+									<li><a href="#" class="clubs-hover">Python</a></li>
+									<li><a href="#" class="clubs-hover">Scratch</a></li>
+									<li><a href="#" class="clubs-hover">Vex Robotics</a></li>
+								-->
+								</ul>
+						</li>
+
+						<li><a href="form-sign-up.html" id="end">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		<!-- Main Section -->
+			<!-- 
+				Maybe remove body-text class from the main section?
+
+				for individual school sections create a link that opens a new tab for that club?
+			-->
+			<div class="body-text">
+				<img src="images/school-clubs/current-locations.svg" id="current-locations-img">
+				<!-- first row -->
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="schools-html/msta-school-info.html">
+                            <img src="images/school-logos/msta.jpg" class="school-logo-img">
+                            <h4>MSTA</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="schools-html/niemes-school-info.html">
+                        <img src="images/school-logos/niemes.gif" class="school-logo-img">
+                        <h4>Niemes</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/saps.jpg" class="school-logo-img">
+                            <h4>St. Anthony Parish School</h4>
+                        </a>
+                    </div>
+				</div>
+				<!-- Second row -->
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/sbs.png" class="school-logo-img">
+                            <h4>St. Barnabas School</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/sgtg.jpg" class="school-logo-img">
+                            <h4>St. Gregory the Great School</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/sis.gif" class="school-logo-img">
+                            <h4>St. Irenaeus Parish School</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/sls.jpeg" class="school-logo-img">
+                            <h4>St. Lucy School</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/smg.jpg" class="school-logo-img">
+                            <h4>St. Maria Goretti School</h4>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/sms.png" class="school-logo-img">
+                            <h4>St. Mary's School</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row text-center">
+					<div class="col-sm-4">
+
+					</div>
+                    <div class="col-sm-4 offset-sm-4">
+                        <a href="#">
+                            <img src="images/school-logos/spc.jpg" class="school-logo-img">
+                            <h4>St. Paul of the Cross School</h4>
+                        </a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-3">
+					&copy;2017 Moving Mindz LLC
+				</div>
+
+				<div class="col-sm-6 center">
+					<a href="https://www.facebook.com/movingmindz" target="_blank"><img src="images/social/facebook.png" class="social-img"></a>
+					<a href="https://twitter.com/Moving_Mindz" target="_blank"><img src="images/social/twitter.png" class="social-img"></a>
+					<a href="https://www.linkedin.com/company/moving-mindz/" target="_blank"><img src="images/social/linkedin.png" class="social-img"></a>
+					<a href="https://www.instagram.com/movingmindz/" target="_blank"><img src="images/social/instagram.png" class="social-img"></a>
+					<a href="https://www.youtube.com/channel/UCcuU9063487uOW15m0ELkeQ" target="_blank"><img src="images/social/youtube.png" class="social-img"></a>
+					<a href="mailto:info@movingmindz.com" target="_blank"><img src="images/social/mail.png" class="social-img"></a>
+				</div>
+
+				<div class="col-sm-3">
+					<a href="#">Contact us</a>
+					|
+					<a href="#">Careers</a>
+					|
+					<a href="#">Locations</a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+</html>
