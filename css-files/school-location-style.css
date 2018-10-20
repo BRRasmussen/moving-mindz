@@ -1,0 +1,30 @@
+.school-logo-img {
+	height: 200px;
+	margin: 20% 0px 10px 0px;
+}
+
+.school-logo-img:hover{
+	filter: opacity(.7);
+}
+
+#current-locations-img{
+	width: 50%;
+	padding-top: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+@media (max-width: 769px)  {
+	.school-logo-img{
+		height: 125px;
+		margin: 10px 0px 10px 0px;
+	}
+}

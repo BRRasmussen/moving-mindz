@@ -1,0 +1,94 @@
+.intro {
+    padding: 50px 0px 0px 0px;
+}
+
+#info-box-niemes{
+    background-color: green;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+/* Image for club description and club registration */
+.club-title-img{
+    width: 50%;
+}
+
+/* Club Registration side box on Desktop */
+#club-reg-side-niemes{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    background-image: url("../images/school-clubs/NEIMASbox.svg");
+}
+
+/* club enrollment button background */
+.school-button{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+/* club enrollment button text color */
+.button-text{
+    color: white;
+}
+
+/* club enrollment button on mouse hover */
+.button-text:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* line break in the club registration side box */
+#hr-club-reg {
+    margin: 0px;
+}
+
+/* Caret is only displayed on the mobile version */
+.caret-mobile{
+    display: none;
+}
+
+.club-desc{
+    text-align: left;
+}
+
+/*
+    Removes bullet points from the club descriptions
+    Also makes list go to the left by removing the padding
+*/
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+@media (max-width: 769px){
+    /* Removes table that is in the desktop version*/
+    .desktop-table{
+        display: none;
+    }
+
+    /* Changes the caret to point down and be black */
+    .caret-mobile {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #000000;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px; 
+        vertical-align: middle;
+    }
+
+    /* Hides club information at the beginning to prevent mobile from being cluttered*/
+    .club-info{
+        display: none;
+    }
+
+    /* Hides club image on mobile */
+    .img-club-mobile{
+        display: none;
+    }
+}

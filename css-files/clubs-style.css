@@ -1,0 +1,270 @@
+#page-title-img{
+    height: 125px;
+    padding: 20px 0px 20px 0px;
+}
+
+#banner1{
+    display: none;
+}
+
+/* Changes the background color of the General information box */
+.info-box{
+	margin: 0px;
+	padding: 5px;
+	color: black;
+}
+
+#info-box1{
+	background-color: #5b9bd5;
+}
+
+#info-box2{
+	background-color: #ed7d31;
+}
+
+#info-box3{
+	background-color: #70ad47;
+}
+
+#info-box4{
+	background-color: #9900cc;
+}
+
+/* Line seperating the general information and the club description*/
+
+.caret-mobile{
+    display: none;
+}
+
+#club-form-row{
+    padding: 10px 0px 0px 0px;
+}
+
+/* Changes the layout of the whole input form for clubs */
+.club-info-form{
+        background-color: rgba(0, 0, 0, .65);
+        color: white;
+        padding: 10px 50px 20px 40px;
+        border-radius: 0px;
+}
+
+
+
+/* Title of the checkbox form for club selection */
+#checkbox-title{
+    margin-left: 10%;
+}
+
+/* Splits checkbox radio inputs in form into 3 columns of 3 each */
+.checkbox-input-split{
+    width: 33%;
+    float: left;
+    margin-right: -5%;
+}
+
+.more-info-form{
+    background-color: rgba(0, 0, 0, .65);
+    color: white;
+	padding: 10px 50px 20px 40px;
+	border-radius: 0px;
+}
+
+#form-message{
+    margin-left: 15%;
+}
+
+.engagement-img{
+    height: 50vh;
+}
+
+/* Adjusts the location of each carousel button */
+#left-control{
+    left: -5%;
+}
+
+#right-control{
+    right: -5%;
+}
+
+.carousel-control-img{
+    height: 75px;
+}
+
+.interest-row{
+    width: auto;
+    background-image: url("../images/clubs/lined-paper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+/*
+***************************************************************************************************
+.form-img is a temporary class for demostration
+*****************************************************************************************************
+*/
+.form-img{
+    width: 50%;
+}
+
+.interest{
+    width: 75%;
+}
+/* Used on the clubs-info.html page*/
+#clubs-carousel-img{
+    width: 40%;
+    padding: 50px 0px 25px 0px;
+}
+/* For title of the club on the available clubs page */
+.club-title{
+    padding: 0px 0px 0px 50px;
+}
+
+
+/* Background color for the clubs on the available clubs page in order of the logo */
+
+.club-odd{
+    background-color: #D6DCDB;
+}
+
+/*
+.club-blue{
+    background-color: #78a6d1;
+}
+
+.club-orange{
+    background-color: #e9a477;
+}
+
+.club-green{
+    background-color: #7aa85c;
+}
+
+.club-purple{
+    background-color: #ad64c5;
+}
+*/
+
+
+/* club-desc aligns text for club title and description of club to the left*/
+.club-desc{
+    text-align: left;
+}
+
+/* Centers the club description in the middle of its box*/
+.center-club-desc{
+    margin: 50px 0px;
+}
+
+/* Adds padding for clubs with description on the right to give space between the words and the end of the box */
+.club-right{
+    padding: 0px 25px 0px 0px;
+}
+
+/* Adjusts the value of the images associated with each club */
+.clubs-desc-img{
+    height: 300px;
+    margin: 25px 0px 25px 25px;
+}
+
+/* 
+    Removes bullet points next from the club descriptions
+    Only way it worked didnt work with class
+    ******* LOOK INTO IT AFTER DONE WITH THE FINAL DETAILS **********
+*/
+#vex-club-info, #print-3d-club, #python-club-info, #game-club-info, #lego-club-info, #knex-club-info, #film-club-info, #anim-3d-club-info{
+    list-style-type: none;
+}
+
+.textarea{
+    width: 50%;
+}
+
+.club-img{
+    height: 200px;
+    margin: 20% 0px 10px 0px;
+}
+
+.club-img:hover{
+    filter: opacity(.7);
+}
+
+.club-info{
+    display: none;
+    list-style-type: none; 
+    margin-left: -10%;
+	font-size: 20px;
+	text-align: left;
+}
+
+/* CSS changes that affect mobile version of the site */
+@media (max-width: 769px){
+
+    #page-title-img{
+        height: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    #gearA{
+        display: none;
+    }
+
+    #gearB{
+        display: none;
+    }
+
+    #gearC{
+        display: none;
+    }
+
+    #gearD{
+        display: none;
+    }
+
+    hr{
+        border-top: 2px solid grey;
+        margin: 20px -3% 20px -3%;
+    }
+
+    .caret-mobile {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #000000;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px; 
+        vertical-align: middle;
+    }
+
+    .arrows-mobile{
+        display: none;
+    }
+
+	.clubs-desc-img{
+		display: none;
+    }
+
+    #checkbox-title{
+        margin: 5% 0px 5% 0px;
+    }
+
+    .checkbox-input-split{
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    #form-message{
+        margin-left: 30%;
+    }
+
+    textarea{
+        width: 100%
+    }
+
+    .club-img{
+		height: 125px;
+		margin: 10px 0px 10px 0px;
+    }
+}

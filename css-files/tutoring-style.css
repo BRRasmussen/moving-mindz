@@ -1,0 +1,217 @@
+.container-fluid{
+	padding: 8px;
+}
+
+#mobile-title{
+	display: none;
+}
+
+#subject-row{
+	margin: 5% 0px 0px 0px;
+}
+
+#topic-box-background{
+	background-color: #D6DCDB;
+	padding: 20px;
+}
+
+/* subject image row */
+.tutor-img{
+	/* height and width 150px for current */
+	width: 125px;
+	margin: 10px;
+    cursor: pointer;
+    /*
+    filter: blur(5px);
+    */
+}
+
+.tutor-img-mobile{
+	display: none;
+}
+
+.topics{
+	list-style: none;
+	text-align: left;
+}
+
+#additional-info{
+	text-align: left;
+	height: auto;
+	width: 100%;
+}
+
+.subject-topic-img{
+	height: auto;
+	width: 100%;
+}
+
+#form-title-img{
+	padding-bottom: 10px;
+}
+
+.form-group{
+	text-align: left;
+}
+
+/*
+.session{
+    display: none;
+}
+*/
+
+#topic-select-img{
+	height: 50px;
+}
+
+/* Change all subject-info ids into one class */
+#math-info, #eng-info, #sci-info, #prep-info{
+    display: none;
+}
+
+
+
+#form-title{
+	padding: 0px 0px 10px 0px;
+}
+
+#form-bg-img{
+	/* The image used */
+	background-image: url("../images/tutoring/general-topic.png");
+
+	/* Control the height of the image */
+	/* min-height for current page
+	min-height: 550px;
+	*/
+	width: 100%;
+	padding: 400px 0px 0px 0px;
+	
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.more-info-form{
+    background-color: rgba(0, 0, 0, .65);
+    color: white;
+	padding: 10px 50px 20px 40px;
+	border-radius: 10px;
+}
+
+#meet-tutor-img{
+	height: 75px;
+	margin: 20px 0px 30px 0px;
+}
+
+.tutor-face-img{
+	height: 200px;
+	border-radius: 50px;
+}
+
+.tutor-desc{
+	font-size: 20px;
+	text-align: left;
+	padding: 20px 0px 20px 0px;
+}
+
+.tutor-name{
+	margin: 20px 0px 10px 20px;
+}
+
+.tutor-face-img{
+	height: 200px;
+}
+
+.form-control{
+    margin: 5px;
+}
+
+#form-submit{
+	font-size: 17px;
+}
+
+@media (max-width: 769px){
+	body{
+		margin: 0px 0px 75px 0px;
+	}
+
+	#mobile-title{
+		display: block;
+	}
+	
+	#topic-select-img{
+		height: 50%;
+		padding-bottom: 10px;
+	}
+	
+	.tutor-img{
+		display: none;
+	}
+
+	.tutor-img-mobile{
+		height: 50px;
+		width: 100%;
+		display: block;
+	}
+
+	#math-list{
+		background-color: #b4cbe0;
+	}
+
+	#eng-list{
+		background-color: #e2c6b4;
+	}
+
+	#sci-list{
+		background-color: #c0ddac;
+	}
+
+	#prep-list{
+		background-color: #d9b3e7;
+	}
+
+	#form-bg-img{
+		display: none;
+	}
+
+	.topics > li{
+		display: block;
+		text-align: left;
+		padding: 5px 0px 5px 0px;
+	}
+
+	.caret-mobile {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #000000;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px; 
+        vertical-align: middle;
+	}
+	
+	#meet-tutor-img{
+		height: 50%;
+		padding-bottom: 10px;
+	}
+
+	.tutor-info-mobile{
+        display: none;
+    }
+
+	.tutor-face-img{
+		display: none;
+	}
+
+	.more-info-form{
+		text-align: left;
+		background-color: rgba(29, 29, 29,.9);
+	}
+
+	#form-submit{
+		font-size: 14px;
+	} 
+}

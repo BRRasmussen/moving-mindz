@@ -1,0 +1,334 @@
+/*
+Moving Mind Logo Colors
+blue: #5b9bd5
+orange: #ed7d31
+green: #70ad47
+purple: #9900cc
+*/
+
+/* Navbar section */
+#mission-statement
+nav {
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+}
+
+hr {
+	margin: 0px;
+	border-top: 10px dashed black;
+}
+
+#active {
+	background-color: lightgrey;
+	color: black;
+}
+
+/* link color */
+.navbar-default .navbar-nav > li > a {
+	color: black;
+	border-color: #5b9bd5;
+	border-radius: 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Additional CSS used for the mobile version */
+@media (max-width: 769px)  {
+	/* Changes background of the mobile menu child dropdowns*/
+	.navbar-nav .open .dropdown-menu{
+		background-color: white;
+	}
+
+	/* Changes background of the mobile menu parent dropdowns */
+	.navbar-default .navbar-nav > li > a {
+		background-color: white;
+	}
+
+	/* Adjusts the padding of the logo */
+	.navbar-brand {
+        padding: 15px px 0px 0px !important;
+	}
+
+	/* Changes background of the elements in the mobile menu*/
+	.navbar-default .navbar-collapse {
+		border-color: white;
+		background-color: white;
+	}
+
+	body{
+		padding:0px;
+	}
+
+	/* Style for the company logo on mobile*/
+	#NavLogoMobile{
+		height: 50px;
+		margin: -15px 20px 0px 10px;
+	}
+
+	/* When menu is clicked in mobile*/
+	.navbar-default .navbar-toggle:hover{
+		background-color: black;
+	}
+
+	/* Default navbar menu in mobile */
+	.navbar-default .navbar-toggle{
+		background-color: black;
+	}
+
+	/* Navbar color and Settings*/
+	.nav {
+		background-color: white;
+		color: black;
+		border-color: white;
+	}
+
+	
+}
+
+/* Changes background of the desktop menu child dropdowns */
+.navbar-nav > li > .dropdown-menu{
+	background-color: rgb(255, 255, 255);
+}
+
+
+/* General settings for the navbar */
+.navbar {
+	border-radius: 0px;
+/*	margin-right: 25px;
+	margin-left: 25px;
+*/
+	margin-bottom: auto;
+	top: 0;
+	border-width: 0 0 1px;
+	
+}
+
+/* Navbar Brand */
+#NavLogo{
+	color: #5b9bd5;
+	height: 50px;
+	margin: -15px 20px 0px 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* Not needed since Company logo will go here
+#NavLogo:hover {
+	color:#bccad6;
+	background-color: #8d9db6;
+}
+*/
+
+/* right side of navbar */
+#end {
+	padding-right: 20px;
+}
+
+
+/* Navbar link visited */
+.navbar-default .navbar-nav > li > a:visited {
+	color: black;
+}
+
+/* navbar active hover */
+.navbar-default .navbar-nav > li > a#active:hover {
+	background-color: #5b9bd5;
+	color: black;
+}
+
+/* navbar link hover */
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: #5b9bd5;
+	color: black;
+	border-radius: 0px;
+}
+
+/* Drop down */
+/* To create dropdown menu appear on hover activate this section
+ .dropdown:hover>.dropdown-menu {
+	display: block;
+	background-color: #667292;
+	border-radius: 0px;
+	color: #bccad6;
+}
+*/
+
+/* Changes the background color of hyperlink menu items*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+	background-color: transparent;
+	text-align: center;
+}
+
+/* when mouse is over a link in the dropdown menu */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: black;
+	background-color: #5b9bd5;
+}
+
+/* Desktop layout */
+/* I dont think this part is used */
+.dropdown-menu > li > a:hover {
+	background-color: white;
+	color: black;
+	border-radius: 0px;
+}
+
+/* When Dropdown is toggled */
+.navbar-default .navbar-nav > .open > a:hover {
+	color: black;
+	background-color: #5b9bd5;
+	text-align: center;
+}
+
+/* NOT SURE!?!?!?! */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover{
+	color: black;
+	background-color: #5b9bd5;
+}
+
+
+/* Changes the color of the dropdown divider for each tab */
+.dropdown-menu > .divider{
+	height: 3px;
+	background-color: black;
+}
+
+
+
+.dropdown-menu, .dropdown-menu > li > a, .dropdown-menu > li > a:visited {
+	background-color: white;
+	color: black;
+	border-radius: 0px;
+	font-size: 20px;
+}
+
+/* lets user know which dropdown menu they opened by changing the background to a different color */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	color: black;
+	background-color: #5b9bd5;
+}
+
+/* Changes the size and color of the caret*/
+.caret {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000000;
+}
+
+/*
+	Navbar color and settings 
+	also affects the size of the navbar
+*/
+.navbar-default {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border-color: rgb(255, 255, 255);
+}
+
+/* Body */
+body {
+	background-color: white;
+	margin: 0px;
+
+}
+
+/* Put into a seperate css for home page? */
+/* .body-text is stacking with other .body-text in tutoring-style.css */
+.body-text{
+	padding: 0px 10% 75px 10%;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+
+
+/* Footer Settings */
+/* General settings for footer */
+footer{
+	position: absolute;
+	width: 100%;
+	line-height: 25px;
+	background-color: white;
+	color: black;
+	padding: 0px 15px;
+	text-align: center;
+}
+
+/* sets a standard size for social media icons at the bottom */
+.social-img{
+	height: 25px;
+	width: 25px;
+	margin: 10px;
+}
+
+/* Sets carousels controls on left and right of carousel*/
+.carousel-control{
+	top: 45%;
+	padding: 0px;
+	width: 50px;
+	position: absolute;
+	background-image: none !important;
+}
+/*
+*********************************
+Seperate css file for index.html 
+*********************************
+*/
+/* Controls the size of the carousel control buttons*/
+.carousel-control-img{
+    height: 75px;
+}
+
+/* PUT INTO SEPERATE CSS FILE FOR MISSION AND VISION*/
+#mission-statement{
+	margin: 20px 0px 0px 0px;
+	padding: 20px;
+	color: black;
+	width: 100%;
+}
+
+#mission-head{
+	padding-top: 20px;
+	color: black;
+}
+
+/* Carousel for index.html */
+/* Image settings for Carousel */
+.carousel-inner > .item > img {
+	width: 100%;
+	margin: 50px auto 0px auto;
+}
+
+.carousel-caption {
+	color: white;
+}
+
+/* IDK if these settings changed anything */
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    margin-left: 350%;
+	margin-right: 350%;
+}
+
+.dropdown-submenu{
+	position: relative;
+}
+
+
+
+.dropdown-submenu .dropdown-menu{
+	top: 0;
+	left: 100%;
+	margin-top: -1px;
+}
+
+@media (max-width: 769px){
+	.carousel-inner > .item > img {
+		width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+/* Seperate CSS file for niemes-school-info.html */
