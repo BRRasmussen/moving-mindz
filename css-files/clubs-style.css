@@ -75,6 +75,7 @@
 
 .engagement-img{
     height: 50vh;
+    padding: 10px;
 }
 
 /* Adjusts the location of each carousel button */
@@ -99,6 +100,10 @@
     padding: 20px;
 }
 
+hr{
+    margin: 0px -10% 0px -10%;
+}
+
 /*
 ***************************************************************************************************
 .form-img is a temporary class for demostration
@@ -106,6 +111,10 @@
 */
 .form-img{
     width: 50%;
+}
+
+.left-arrow{
+    width: 100%;
 }
 
 .interest{
@@ -126,6 +135,7 @@
 
 .club-odd{
     background-color: #D6DCDB;
+    margin: 0px -10% 0px -10%;
 }
 
 /*
@@ -173,8 +183,12 @@
     Only way it worked didnt work with class
     ******* LOOK INTO IT AFTER DONE WITH THE FINAL DETAILS **********
 */
-#vex-club-info, #print-3d-club, #python-club-info, #game-club-info, #lego-club-info, #knex-club-info, #film-club-info, #anim-3d-club-info{
+#vex-club-info, #print-3d-club, #python-club-info, #game-club-info, #lego-club-info, #knex-club-info, #film-club-info, #anim-3d-club-info, #anim-2d-club-info{
     list-style-type: none;
+}
+
+.space-above-form{
+    padding: 50px 0px 0px 0px;
 }
 
 .textarea{
@@ -183,6 +197,7 @@
 
 .club-img{
     height: 200px;
+    width: 200px;
     margin: 20% 0px 10px 0px;
 }
 
@@ -204,22 +219,6 @@
     #page-title-img{
         height: 100%;
         padding: 20px 0px 20px 0px;
-    }
-
-    #gearA{
-        display: none;
-    }
-
-    #gearB{
-        display: none;
-    }
-
-    #gearC{
-        display: none;
-    }
-
-    #gearD{
-        display: none;
     }
 
     hr{
@@ -266,5 +265,17 @@
     .club-img{
 		height: 125px;
 		margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (max-width: 1200px){
+    .engagement-img{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .engagement-img{
+        height: 30vh;
     }
 }

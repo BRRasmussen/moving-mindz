@@ -1,5 +1,5 @@
 .intro {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 40px 0px;
 }
 
 #info-box-niemes{
@@ -14,6 +14,11 @@
 /* Image for club description and club registration */
 .club-title-img{
     width: 50%;
+    padding: 40px 0px 40px 0px;
+}
+
+.club-odd{
+    background-color: #D6DCDB;
 }
 
 /* Club Registration side box on Desktop */
@@ -53,6 +58,12 @@
 
 .club-desc{
     text-align: left;
+}
+
+.img-club{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
 }
 
 /*
