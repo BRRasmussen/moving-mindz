@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Moving Mindz</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Allows bootstrap to scale to mobile verison -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css-files/style.css">
+		<!-- CSS only for this page -->
+		<link rel="stylesheet" href="css-files/school-location-style.css">
+
+		<script>
+			$(document).ready(function(){
+				$("#enroll").on("click", function(){
+					alert("click")
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!-- Navbar section -->
+			<nav class="navbar navbar-default">
+				<div class="nav navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar navbar-brand" href="index.html">
+						<!-- This image will appear when viewed from mobile -->
+						<img class="visible-xs" src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogoMobile"> 
+						<!-- This image will appear when viewed from desktop -->
+						<img class="hidden-xs" src="images/MMZ-logos/MMZ-logo-mobile.png" id="NavLogo">
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="MyNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Index.html">Home</a></li>
+
+						<li><a href="team-info.html" id="active">Team</a></li>
+
+						<!-- Dropdown Menu / Tutoring -->
+						<li><a href="tutoring-info.php" class="tutor-hover">Tutoring</a></li>
+						
+						<!-- Dropdown Menu / After School Clubs -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Clubs
+								<i class="caret" id="clubs-caret"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="clubs-info.html" class="clubs-hover">Clubs Information</a></li>
+									<li class="divider" id="clubs-div"></li>
+									<li><a href="school-location.html" class="clubs-hover">School Locations</a></a></li>
+									<li><a href="available-clubs.html" class="clubs-hover">Available Clubs</a></a></li>
+								</ul>
+						</li>
+
+						<li><a href="form-sign-up.html" id="end">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		<!-- Main Section -->
+			<div class="body-text">
+				<h1>MEET THE TEAM!!</h1>
+				<img src="#">
+				<!-- first row -->
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/mmz-joke/john-joke.png" class="school-logo-img">
+							<h4>John Gaines</h4>
+							<!-- has an awesome beard -->
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                        	<img src="images/mmz-joke/liz-joke.png" class="school-logo-img">
+							<h4>Liz Gaines</h4>
+							<!-- every week a new hair color -->
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/mmz-joke/roger-joke.png" class="school-logo-img">
+							<h4>Roger Villasano</h4>
+							<!-- probably has vegan powers -->
+                        </a>
+                    </div>
+				</div>
+				<!-- 2nd row -->
+				<div class="row text-center">
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="images/mmz-joke/alexis-joke.png" class="school-logo-img">
+							<h4>Alexis Luong</h4>
+							<!-- You don't mess with the bay area -->
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Ashley Cooley</h4>
+							<!-- haven't see her in a couple weeks. How is she? -->
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Anabel ???</h4>
+							<!-- she still works here right? haven't seen her in a while and she isn't on deputy anymore -->
+						</a>
+					</div>
+				</div>
+				<!-- 3rd row -->
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/mmz-joke/brandon-joke.png" class="school-logo-img">
+							<h4>Brandon Rasmussen</h4>
+							<!-- Ginger in disguise -->
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+						<a href="#">
+							<img src="images/mmz-joke/brianna-joke.png" class="school-logo-img">
+							<h4>Brianna Merkley</h4>
+							<!-- don't disrespect the earth kingdom -->
+						</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="images/mmz-joke/lauren-y-joke.png" class="school-logo-img">
+							<h4>Lauren Yates</h4>
+							<!-- steals souls (99% sure she is half demon) -->
+                        </a>
+                    </div>
+				</div>
+				<!-- 4th row-->
+                <div class="row text-center">
+					<div class="col-sm-4">
+                        <a href="#">
+                            <img src="#" class="school-logo-img">
+							<h4>Catherin De La Torre</h4>
+							<!-- cool with being called cat 10/10 -->
+                        </a>
+					</div>
+                    <div class="col-sm-4">
+						<a href="#">
+							<img src="images/mmz-joke/lauren-s-joke.png" class="school-logo-img">
+							<h4>Lauren Sotez</h4>
+							<!-- Can we give the two of them nicknames?? -->
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>David Harang</h4>
+							<!-- That's my car oh wait that's my car no wait it's that one -->
+						</a>
+					</div>
+				</div>
+				<!-- 5th row -->
+				<div class="row text-center">
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="images/mmz-joke/gaby-joke.png" class="school-logo-img">
+							<h4>Gaby Sell</h4>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Joseca Salud</h4>
+							<!-- her dance will catch on eventually -->
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Justin Terry</h4>
+						</a>
+					</div>
+				</div>
+				<!-- 6th row -->
+				<div class="row text-center">
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Lindsey Ingram</h4>
+							<!-- The only person I still need to meet, who is she?-->
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Molly Toombs</h4>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#">
+							<img src="#" class="school-logo-img">
+							<h4>Kylie</h4>
+							<!-- TESLA = god among men while EDISON = the devil -->
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-3 footer-text">
+					&copy;2017 Moving Mindz LLC
+				</div>
+
+				<div class="col-sm-6 center">
+					<a href="https://www.facebook.com/movingmindz" target="_blank"><img src="images/social/facebook.png" class="social-img"></a>
+					<a href="https://twitter.com/Moving_Mindz" target="_blank"><img src="images/social/twitter.png" class="social-img"></a>
+					<a href="https://www.linkedin.com/company/moving-mindz/" target="_blank"><img src="images/social/linkedin.png" class="social-img"></a>
+					<a href="https://www.instagram.com/movingmindz/" target="_blank"><img src="images/social/instagram.png" class="social-img"></a>
+					<a href="https://www.youtube.com/channel/UCcuU9063487uOW15m0ELkeQ" target="_blank"><img src="images/social/youtube.png" class="social-img"></a>
+					<a href="mailto:info@movingmindz.com" target="_blank"><img src="images/social/mail.png" class="social-img"></a>
+				</div>
+
+				<div class="col-sm-3 footer-text">
+					<a href="#">Contact us</a>
+					|
+					<a href="#">Careers</a>
+					|
+					<a href="#">Locations</a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+</html>
