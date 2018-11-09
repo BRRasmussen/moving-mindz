@@ -142,7 +142,7 @@
 				
 				<div class="collapse navbar-collapse" id="MyNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="Index.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 
 						<li><a href="team-info.html">Team</a></li>
 
@@ -215,7 +215,7 @@
 
 									<!-- FORM FOR MORE INFORMATION -->
 									<!-- NEED TO FILL OUT ACTION SECTION ONCE FRONTEND IS DONE -->
-									<form class="more-info-form" action="" method="post">
+									<form class="more-info-form" action="tutoring-info.php" method="post">
 										<!-- Change font for more information title to Spy Agency font -->
 										<img src="images/tutoring/want-more-info-white.svg" id="form-title-img">
 										<div class="form-group">
@@ -252,19 +252,8 @@
 									</form>
 									<?php
 										// need to create a sql connection
-                                    
-                                        // variables for php
-										$name = $_POST["name-tutor"];
-										$email = $_POST["email-tutor"];
-										$phone = $_POST["phone-tutor"];
 
-										$sql = "INSERT INTO signup (name, email, phone,) VALUES ('$name', '$email', '$phone')";
 
-                                        // on click of submit will send the information to the database
-										if($_POST["submit"]){
-											echo ('<script> alert("Thank you! We will contact you soon!")</script>');
-                                        }
-                                        
 									?>
 								</div>
 							</div>
