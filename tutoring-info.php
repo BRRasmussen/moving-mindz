@@ -69,6 +69,8 @@
 					// on click makes other topics transparent and changes
 					// the background image of the section next to the topics to a
 					// picture of the selected topic
+					// need to make picture scale properly with the resolution of the monitor
+					// the tiny details are the absolute worse!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 					$("#sub-math-img").on("click", function(){
 						$(this).css({
 							"filter": "none"
@@ -175,7 +177,7 @@
 								</ul>
 						</li>
 
-						<li><a href="form-sign-up.html" id="end">Contact</a></li>
+						<li><a href="form-sign-up.php" id="end">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -186,7 +188,8 @@
 					<div id="subject-row" >
 						<!-- id has background-image: tutoring-head.png -->
 						<div class="body-text">
-							<div class="row">
+							<div class="row bg-img">
+								<!-- Look into putting the image behind the form and goes the length of the page -->
 								<div class="col-sm-6">
 									<img src="images/tutoring/tutoring-header.png" style="width: 100%;">
 								</div>
@@ -238,7 +241,7 @@
 											<div class="row">
 												<label for="inlineFormPhone" class="col-sm-2">Phone:</label>
 												<div class="col-sm-10">
-													<input type="text" name="phone-tutor"class="form-control" id="formPhone-Tutor" placeholder="(000) 000 - 0000">
+													<input type="text" name="phone-tutor" class="form-control" id="formPhone-Tutor" placeholder="(000) 000 - 0000">
 												</div>
 											</div>
 										</div>
@@ -252,8 +255,20 @@
 									</form>
 									<?php
 										// need to create a sql connection
+										// double check phpmyadmin to make sure database name is correct
 
 
+
+										$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+										// variables for php
+										$username = mysqli_real_escape_string($conn, $_POST["name-tutor"]);
+										$email = mysqli_real_escape_string($conn, $_POST["email-tutor"]);
+										$phone = mysqli_real_escape_string($conn, $_POST["phone-tutor"]);
+										
+										// inserting into database
+										// phpmyadmin might make the table lowercase only (which would be why this command doesn't work)
+										$sql = "INSERT INTO mmzOrgSignup (Name, Email, Phone) VALUES ('$name', '$email', '$phone')";
 									?>
 								</div>
 							</div>
