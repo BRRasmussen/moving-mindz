@@ -11,6 +11,12 @@
 	padding: 20px;
 }
 
+/* banner and form */
+.bg-img{
+	background-image: url("images/tutoring/tutoring-header.png");
+	width: 100%;
+}
+
 /* subject image row */
 .tutor-img{
 	/* height and width 150px for current */
